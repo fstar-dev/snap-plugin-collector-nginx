@@ -26,8 +26,8 @@ A working snap agent and a running instance of nginx application which expose a 
 * Mac OS X
 
 ### Build
-Fork https://github.com/Staples-Inc/snap-plugin-collector-nginx
-Clone repo into `$GOPATH/src/github.com/Staples-Inc/`:
+Fork https://github.com/fstar-dev/snap-plugin-collector-nginx
+Clone repo into `$GOPATH/src/github.com/fstar-dev/`:
 
 ```
 $ git clone https://github.com/<yourGithubID>/snap-plugin-collector-nginx.git
@@ -45,10 +45,10 @@ Make sure that your $SNAP_PATH is set, e.g.:
 $ export SNAP_PATH=\<snapDirectoryPath\>/build/linux/x86_64
 
 Run the snap agent with the config file:
-> $SNAP_PATH/snapteld --plugin-trust 0 --log-level 1 --config $GOPATH/src/github.com/Staples-Inc/snap-plugin-collector-nginx/config.json
+> $SNAP_PATH/snapteld --plugin-trust 0 --log-level 1 --config $GOPATH/src/github.com/fstar-dev/snap-plugin-collector-nginx/config.json
 
 Load the collector plugin:
-> $SNAP_PATH/snaptel plugin load $GOPATH/src/github.com/Staples-Inc/snap-plugin-collector-nginx/build/rootfs/snap-plugin-collector-nginx
+> $SNAP_PATH/snaptel plugin load $GOPATH/src/github.com/fstar-dev/snap-plugin-collector-nginx/build/rootfs/snap-plugin-collector-nginx
 
 ### Verify
 To Verify nginx mertics:
